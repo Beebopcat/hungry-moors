@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "bookId": "moors-that-hunger-v1",
+  "intro": {
+    "bookId": "moors-that-hunger-v1",
+    "src": null,
+    "voice": "qn_lorath_refined",
+    "seed": 93019,
+    "textSha256": null,
+    "sampleRate": 24000,
+    "channels": 1,
+    "bits": 24,
+    "status": "pending",
+    "holdReason": "adapted-opening-spoken-source-not-authored"
+  }
+}
