@@ -1,0 +1,27 @@
+/* Keep titles and playback tools on separate rows in constrained readers.
+   Font sizes remain in title-scale.css; this file changes layout and targets only. */
+@media (max-width:900px),(max-height:510px){
+ #book .book-bar{height:auto;min-height:0;padding:8px 12px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+ #book .book-mark{flex:1 1 12rem;min-width:0;overflow-wrap:anywhere}
+ #book .book-controls{display:flex;flex:0 1 auto;width:auto;max-width:100%;flex-wrap:wrap;align-items:center;gap:6px;justify-content:flex-end}
+ #book .book-controls>button,#book .book-settings summary,#book .book-settings button{min-width:44px;min-height:44px}
+ #book .book-settings summary{display:inline-flex;align-items:center;justify-content:center}
+ #book .book-settings[open]>div{top:calc(100% + 4px);max-width:calc(100vw - 24px)}
+ #book .story-page .page-heading{grid-template-columns:minmax(0,1fr);gap:6px;min-width:0;padding:0 0 10px}
+ #book .page-heading>h2,#book .page-heading>.eyebrow,#book .page-heading>.reading-tools{grid-column:1/-1;min-width:0;max-width:100%}
+ #book .page-heading>h2{overflow-wrap:anywhere}
+ #book .reading-tools{width:100%;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+ #book .reading-tools button,#book .reading-tools select,#book .story-page .choice{min-width:44px;min-height:44px}
+ #book .reading-tools .route-picker{display:flex;align-items:center;flex:1 1 220px;min-width:0;max-width:100%;gap:6px}
+ #book .route-picker select{flex:1 1 auto;min-width:0;width:100%;max-width:100%}
+}
+@media (max-width:620px){
+ #book .book-mark{flex-basis:100%}
+ #book .book-controls{flex:1 1 100%;width:100%;justify-content:space-between}
+}
+@media (max-height:510px){
+ /* Short screens scroll the complete reading column, so larger targets never
+    consume the prose or trap choices below an overflow-hidden ancestor. */
+ #book .story-page{display:block;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+ #book .story-page .passage{overflow:visible;max-height:none;min-height:0;scrollbar-gutter:auto}
+}

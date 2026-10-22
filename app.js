@@ -220,8 +220,8 @@ export function createBookApp({root=document,storage,audioFactory=createBookAudi
   $('passage').scrollTop=0;$('back').disabled=!state.path.length;
   $('choices').replaceChildren();
   if(displayed.ending){const button=root.createElement('button');button.className='primary';button.textContent='Begin another story';button.onclick=()=>cover();$('choices').append(button);}
-  else if(viewDepth===null) page.choices.forEach((choice,index)=>{const button=root.createElement('button');button.className='choice';button.dataset.choice=String(index);button.innerHTML=`${esc(choice.label)}<span aria-hidden="true">→</span>`;button.onclick=event=>{if(event?.detail>1)return;chooseAction(index);};$('choices').append(button);});
-  checkpoints();soundControls();if(viewDepth!==null){$('choices').textContent='Earlier checkpoint · your current journey is unchanged.';}if(focus)$('page-title').focus({preventScroll:true});
+  else if(viewDepth===null) page.choices.forEach((choice,index)=>{const button=root.createElement('button');button.className='choice';button.dataset.choice=String(index);button.innerHTML=`${esc(choice.label)}<span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-7-7 7 7-7 7" fill="none"/></g></svg></span>`;button.onclick=event=>{if(event?.detail>1)return;chooseAction(index);};$('choices').append(button);});
+  checkpoints();soundControls();if(viewDepth!==null){$('choices').textContent='Earlier checkpoint · your current journey is unchanged.';}const readingColumn=root.querySelector('.story-page');if(readingColumn)readingColumn.scrollTop=0;if(focus)$('page-title').focus({preventScroll:true});
   if(narrate&&voiceOn&&playing)void read(page,narrativeOptions());
  }
  function chooseAction(index){
