@@ -4,7 +4,9 @@
 
 [**▶ Live demo**](https://beebopcat.github.io/hungry-moors/) · [**Play on caseyshingledecker.com**](https://caseyshingledecker.com/demos/top-secret/moorland-hikers/) · [**Source**](https://github.com/Beebopcat/hungry-moors)
 
-[![Hungry Moors cover with a moonlit village-road illustration, a Start your Adventure button and an adult-horror label.](docs/media/01.webp)](https://beebopcat.github.io/hungry-moors/)
+[![Hungry Moors promotional cover art.](docs/media/design-cover.webp)](https://beebopcat.github.io/hungry-moors/)
+
+*Promotional cover art; gameplay screenshots appear below.*
 
 > **Status:** the game files are being added to this repository. Until `index.html` is at the repository root, the GitHub Pages link above has nothing to show; the same game is playable on caseyshingledecker.com.
 
