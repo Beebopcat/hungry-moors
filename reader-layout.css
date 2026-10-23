@@ -25,3 +25,22 @@
  #book .story-page{display:block;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
  #book .story-page .passage{overflow:visible;max-height:none;min-height:0;scrollbar-gutter:auto}
 }
+
+/* Phones use one continuous reading surface, with full-width illustrations. */
+@media(max-width:699px){
+ html,body{height:100%;min-height:0;overflow:hidden}
+ #book{height:100dvh;min-height:0;overflow:hidden}
+ #book .reader{display:block;flex:1;min-height:0;height:auto;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-gutter:auto;padding:0}
+ #book .story-picture{display:block;height:auto;min-height:0;overflow:visible;border:0}
+ #book .story-picture img,#book .story-picture video{display:block;width:100%;height:auto;max-height:none;object-fit:contain;aspect-ratio:auto}
+ #book .story-picture figcaption{position:static;transform:none;max-width:none;margin:0;padding:8px 12px;font-size:11px;line-height:1.4}
+ #book .story-page{display:block;overflow:visible;height:auto;min-height:0;padding:16px}
+ #book .story-page .passage{display:block;overflow:visible;height:auto;min-height:0;max-height:none;padding:0;scrollbar-gutter:auto}
+ #book .page-heading{margin-bottom:14px}
+ #book .choices{margin-top:20px;padding-bottom:16px}
+ #book .book-mark{flex:1 1 100%}
+ #book .book-controls{justify-content:flex-start;gap:8px}
+ #book .reading-tools{gap:8px}
+ #book .reading-tools button,#book .reading-tools select,#book .book-controls button,#book .book-settings summary{min-height:44px;min-width:44px}
+ #book .reading-tools .route-picker{flex:1 1 100%}
+}

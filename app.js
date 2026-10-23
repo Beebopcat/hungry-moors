@@ -217,7 +217,7 @@ export function createBookApp({root=document,storage,audioFactory=createBookAudi
   $('page-title').textContent=page.title;picture(page);
   const latest=displayed.latest;const unit=page.id+'|'+(latest?'choice:'+latest.pageId+':'+latest.choice.id:'');if(audio.position?.().unit!==unit)audio.stopNarration(true);
   $('passage').innerHTML=(latest?`<aside class="last-choice"><strong>You chose: ${esc(latest.choice.label)}</strong><p>${esc(latest.choice.consequence)}</p></aside>`:'')+page.paragraphs.map(text=>`<p>${esc(text)}</p>`).join('')+(page.dialogue||[]).map(line=>`<blockquote class="dialogue"><cite>${esc(story.characters.find(c=>c.id===line.speaker)?.name||line.speaker)}</cite>${esc(line.text)}</blockquote>`).join('');
-  $('passage').scrollTop=0;$('back').disabled=!state.path.length;
+  $('passage').scrollTop=0;if(matchMedia('(max-width:699px)').matches)$('reader').scrollTop=0;$('back').disabled=!state.path.length;
   $('choices').replaceChildren();
   if(displayed.ending){const button=root.createElement('button');button.className='primary';button.textContent='Begin another story';button.onclick=()=>cover();$('choices').append(button);}
   else if(viewDepth===null) page.choices.forEach((choice,index)=>{const button=root.createElement('button');button.className='choice';button.dataset.choice=String(index);button.innerHTML=`${esc(choice.label)}<span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-7-7 7 7-7 7" fill="none"/></g></svg></span>`;button.onclick=event=>{if(event?.detail>1)return;chooseAction(index);};$('choices').append(button);});
