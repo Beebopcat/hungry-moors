@@ -4,167 +4,167 @@ import {createBookAudio} from './audio.js';
 const SAVE='casey.slaughtered-lamb.story.v1';
 const PAGE_ART=Object.freeze({
   "the-fork": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/the-fork.png",
+    "src": "ext/media/design/story-art/20261023/hungry/the-fork.webp",
     "caption": "Three ways into the fog · Hungry Moors"
   },
   "road-cutoff": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/road-cutoff.png",
+    "src": "ext/media/design/story-art/20261023/hungry/road-cutoff.webp",
     "caption": "The breath ahead · Hungry Moors"
   },
   "wooded-shelter": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/wooded-shelter.png",
+    "src": "ext/media/design/story-art/20261023/hungry/wooded-shelter.webp",
     "caption": "A roof among the trees · Hungry Moors"
   },
   "bolted-lamb": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/bolted-lamb.png",
+    "src": "ext/media/design/story-art/20261023/hungry/bolted-lamb.webp",
     "caption": "The bolt on the other side · Hungry Moors"
   },
   "crypt-coats": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/crypt-coats.png",
+    "src": "ext/media/design/story-art/20261023/hungry/crypt-coats.webp",
     "caption": "The coats beneath the chapel · Hungry Moors"
   },
   "cellar-account": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/cellar-account.png",
+    "src": "ext/media/design/story-art/20261023/hungry/cellar-account.webp",
     "caption": "Tonight’s empty lines · Hungry Moors"
   },
   "road-wicket": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/road-wicket.png",
+    "src": "ext/media/design/story-art/20261023/hungry/road-wicket.webp",
     "caption": "The wicket and the hand · Hungry Moors"
   },
   "one-hand": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/one-hand.png",
+    "src": "ext/media/design/story-art/20261023/hungry/one-hand.webp",
     "caption": "One hand, two lives · Hungry Moors"
   },
   "blue-light": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/blue-light.png",
+    "src": "ext/media/design/story-art/20261023/hungry/blue-light.webp",
     "caption": "The light above a man’s head · Hungry Moors"
   },
   "road-bell": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/road-bell.png",
+    "src": "ext/media/design/story-art/20261023/hungry/road-bell.webp",
     "caption": "The bell rope in the rain · Hungry Moors"
   },
   "woods-marking": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/woods-marking.png",
+    "src": "ext/media/design/story-art/20261023/hungry/woods-marking.webp",
     "caption": "The mark beneath the plaster · Hungry Moors"
   },
   "pub-son": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/pub-son.png",
+    "src": "ext/media/design/story-art/20261023/hungry/pub-son.webp",
     "caption": "The photograph’s uneven smile · Hungry Moors"
   },
   "pub-road-home": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/pub-road-home.png",
+    "src": "ext/media/design/story-art/20261023/hungry/pub-road-home.webp",
     "caption": "A lamp no longer waiting · Hungry Moors"
   },
   "pub-last-bolt": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/pub-last-bolt.png",
+    "src": "ext/media/design/story-art/20261023/hungry/pub-last-bolt.webp",
     "caption": "The bolt he could still lift · Hungry Moors"
   },
   "two-coats": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/two-coats.png",
+    "src": "ext/media/design/story-art/20261023/hungry/two-coats.webp",
     "caption": "Two coats at morning · Hungry Moors"
   },
   "record-saved": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/record-saved.png",
+    "src": "ext/media/design/story-art/20261023/hungry/record-saved.webp",
     "caption": "The account that survived · Hungry Moors"
   },
   "witnessed-mercy": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/witnessed-mercy.png",
+    "src": "ext/media/design/story-art/20261023/hungry/witnessed-mercy.webp",
     "caption": "No one waits alone · Hungry Moors"
   },
   "safe-voice": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/safe-voice.png",
+    "src": "ext/media/design/story-art/20261023/hungry/safe-voice.webp",
     "caption": "The voice allowed through · Hungry Moors"
   },
   "road-kept": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/road-kept.png",
+    "src": "ext/media/design/story-art/20261023/hungry/road-kept.webp",
     "caption": "The road kept its promise · Hungry Moors"
   },
   "names-returned": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/names-returned.png",
+    "src": "ext/media/design/story-art/20261023/hungry/names-returned.webp",
     "caption": "Names returned to families · Hungry Moors"
   },
   "boundary-broken": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/boundary-broken.png",
+    "src": "ext/media/design/story-art/20261023/hungry/boundary-broken.webp",
     "caption": "The village's last excuse · Hungry Moors"
   },
   "lamps-reckoning": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/lamps-reckoning.png",
+    "src": "ext/media/design/story-art/20261023/hungry/lamps-reckoning.webp",
     "caption": "Lamps at The Slaughtered Lamb · Hungry Moors"
   },
   "red-sleeve": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/red-sleeve.png",
+    "src": "ext/media/design/story-art/20261023/hungry/red-sleeve.webp",
     "caption": "A hand at the wall · Hungry Moors"
   },
   "vestry-window": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/vestry-window.png",
+    "src": "ext/media/design/story-art/20261023/hungry/vestry-window.webp",
     "caption": "The nails turned inward · Hungry Moors"
   },
   "upstairs-hand": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/upstairs-hand.png",
+    "src": "ext/media/design/story-art/20261023/hungry/upstairs-hand.webp",
     "caption": "A window without a view · Hungry Moors"
   },
   "road-graves": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/road-graves.png",
+    "src": "ext/media/design/story-art/20261023/hungry/road-graves.webp",
     "caption": "The graves without dates · Hungry Moors"
   },
   "measured-help": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/measured-help.png",
+    "src": "ext/media/design/story-art/20261023/hungry/measured-help.webp",
     "caption": "A door opened carefully · Hungry Moors"
   },
   "borrowed-friend": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/borrowed-friend.png",
+    "src": "ext/media/design/story-art/20261023/hungry/borrowed-friend.webp",
     "caption": "The friend the fog remembered · Hungry Moors"
   },
   "hunter-followed": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/hunter-followed.png",
+    "src": "ext/media/design/story-art/20261023/hungry/hunter-followed.webp",
     "caption": "The hunger that followed · Hungry Moors"
   },
   "name-price": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/name-price.png",
+    "src": "ext/media/design/story-art/20261023/hungry/name-price.webp",
     "caption": "The name beyond the boundary · Hungry Moors"
   },
   "woods-altar": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/woods-altar.png",
+    "src": "ext/media/design/story-art/20261023/hungry/woods-altar.webp",
     "caption": "A table set for no one · Hungry Moors"
   },
   "pub-confession": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/pub-confession.png",
+    "src": "ext/media/design/story-art/20261023/hungry/pub-confession.webp",
     "caption": "What the ledger does not say · Hungry Moors"
   },
   "road-voice": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/road-voice.png",
+    "src": "ext/media/design/story-art/20261023/hungry/road-voice.webp",
     "caption": "A friend's voice behind the door · Hungry Moors"
   },
   "woods-oil": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/woods-oil.png",
+    "src": "ext/media/design/story-art/20261023/hungry/woods-oil.webp",
     "caption": "The lamp at the church threshold · Hungry Moors"
   },
   "woods-rope": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/woods-rope.png",
+    "src": "ext/media/design/story-art/20261023/hungry/woods-rope.webp",
     "caption": "The bindings left behind · Hungry Moors"
   },
   "pub-lamp": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/pub-lamp.png",
+    "src": "ext/media/design/story-art/20261023/hungry/pub-lamp.webp",
     "caption": "The mother's lamp · Hungry Moors"
   },
   "pub-regular": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/pub-regular.png",
+    "src": "ext/media/design/story-art/20261023/hungry/pub-regular.webp",
     "caption": "The man who held the bolt · Hungry Moors"
   },
   "road-dawn": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/road-dawn.png",
+    "src": "ext/media/design/story-art/20261023/hungry/road-dawn.webp",
     "caption": "The last hundred paces · Hungry Moors"
   },
   "road-hollow": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/road-hollow.png",
+    "src": "ext/media/design/story-art/20261023/hungry/road-hollow.webp",
     "caption": "The shelter under the bridge · Hungry Moors"
   },
   "woods-brook": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/woods-brook.png",
+    "src": "ext/media/design/story-art/20261023/hungry/woods-brook.webp",
     "caption": "The water beside the causeway · Hungry Moors"
   },
   "woods-witness": {
-    "src": "ext/media/casey-rie-interiors-20261004-v1/woods-witness.png",
+    "src": "ext/media/design/story-art/20261023/hungry/woods-witness.webp",
     "caption": "The last shadow of the chapel · Hungry Moors"
   }
 });
